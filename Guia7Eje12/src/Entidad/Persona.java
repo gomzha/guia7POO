@@ -4,17 +4,18 @@
  */
 package Entidad;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Persona {
     
     private String nombre;
-    private Date fechaNaci;
+    private LocalDate fechaNaci;
 
     public Persona() {
     }
 
-    public Persona(String nombre, Date fechaNaci) {
+    public Persona(String nombre, LocalDate fechaNaci) {
         this.nombre = nombre;
         this.fechaNaci = fechaNaci;
     }
@@ -27,11 +28,11 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public Date getFechaNaci() {
+    public LocalDate getFechaNaci() {
         return fechaNaci;
     }
 
-    public void setFechaNaci(Date fechaNaci) {
+    public void setFechaNaci(LocalDate fechaNaci) {
         this.fechaNaci = fechaNaci;
     }
 
@@ -39,6 +40,7 @@ public class Persona {
     public String toString() {
         return "Persona{" + "nombre=" + nombre + ", fechaNaci=" + fechaNaci + '}';
     }
+
     
     
     

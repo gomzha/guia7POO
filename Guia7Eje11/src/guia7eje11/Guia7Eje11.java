@@ -42,7 +42,6 @@ Scanner leer = new Scanner(System.in).useDelimiter("\n");
         int difeAnios = Math.abs(fechaActual.getYear() - fecha.getYear());
                 System.out.println("Diferencia de fecha = " + difeAnios);
 
-
     }
     
 }

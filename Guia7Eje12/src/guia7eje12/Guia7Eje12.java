@@ -4,6 +4,9 @@
  */
 package guia7eje12;
 
+import Entidad.Persona;
+import Servicio.ServicioPersona;
+
 /**
  *
  * @author A308443
@@ -11,6 +14,11 @@ package guia7eje12;
 public class Guia7Eje12 {
 
     public static void main(String[] args) {
+        
+        ServicioPersona servPer = new ServicioPersona();
+        Persona per = servPer.crearPersona();
+        System.out.println("la fecha es: " + per.getFechaNaci());
+        servPer.menorQue(per,servPer.calcularEdad(per));
 
 
     }
