@@ -46,7 +46,6 @@ public class ServicioPersona {
 
 
         LocalDate fechaNacimiento = LocalDate.of(objPer.getFechaNaci().getYear(), objPer.getFechaNaci().getMonth(), objPer.getFechaNaci().getDayOfMonth());
-        System.out.println("hola3");
         edad = (Period.between(fechaNacimiento, fechaHoy).getYears());
         System.out.println("Tiene una edad de: " + edad);
         return edad;
